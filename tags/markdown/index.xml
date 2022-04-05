@@ -6,15 +6,17 @@
     <description>Recent content in markdown on Technology blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jackson99011.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jackson99011.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>jackson test Guide</title>
+      <title>MarkDowm 練習測試</title>
       <link>https://jackson99011.github.io/post/markdown-test/</link>
-      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jackson99011.github.io/post/markdown-test/</guid>
       
-        <description>Test </description>
+        <description>Hello world
+一級標題 二級標題 六級標題 我是學生，我喜歡學習。
+ list1  list11  list11     list2 list3   hello  hello world   hello1  外部引用</description>
       
     </item>
     
