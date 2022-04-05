@@ -1,54 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Technology blog</title>
+    <title>Tags on Technology Blog</title>
     <link>https://jackson99011.github.io/tags/</link>
-    <description>Recent content in Tags on Technology blog</description>
+    <description>Recent content in Tags on Technology Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jackson99011.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Mar 2021 10:07:47 +0600</lastBuildDate><atom:link href="https://jackson99011.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>css</title>
       <link>https://jackson99011.github.io/tags/css/</link>
-      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Mar 2021 10:07:47 +0600</pubDate>
       
       <guid>https://jackson99011.github.io/tags/css/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
       <title>html</title>
       <link>https://jackson99011.github.io/tags/html/</link>
-      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Mar 2021 10:07:47 +0600</pubDate>
       
       <guid>https://jackson99011.github.io/tags/html/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
       <title>markdown</title>
       <link>https://jackson99011.github.io/tags/markdown/</link>
-      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Mar 2021 10:07:47 +0600</pubDate>
       
       <guid>https://jackson99011.github.io/tags/markdown/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
-      <title>index</title>
-      <link>https://jackson99011.github.io/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Game</title>
+      <link>https://jackson99011.github.io/tags/game/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://jackson99011.github.io/tags/index/</guid>
+      <guid>https://jackson99011.github.io/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New</title>
+      <link>https://jackson99011.github.io/tags/new/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-        <description></description>
+      <guid>https://jackson99011.github.io/tags/new/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photos</title>
+      <link>https://jackson99011.github.io/tags/photos/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
+      <guid>https://jackson99011.github.io/tags/photos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://jackson99011.github.io/tags/python/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://jackson99011.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://jackson99011.github.io/tags/react/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://jackson99011.github.io/tags/react/</guid>
+      <description></description>
     </item>
     
   </channel>
