@@ -8,6 +8,18 @@
     <language>zh-tw</language>
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://jackson99011.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>資深工程師含意</title>
+      <link>https://jackson99011.github.io/blog/sensiorbackendsoftware/</link>
+      <pubDate>Mon, 01 Mar 2021 10:09:47 +0600</pubDate>
+      
+      <guid>https://jackson99011.github.io/blog/sensiorbackendsoftware/</guid>
+      <description>如何才有資格稱為資深工程師? 外部參考引用(如何才有資格稱為資深工程師)
+技術能力層面 對工具技術有深入的掌握度 這個特點大概是一般人用來評斷資深工程師能力最明顯的表象特徵，也就是是否將常用的工具能練得很熟或是對語言理解得夠深，同時也將技術內化到自己平常的開發習慣裡，達到信手捻來的境界。這樣的資深工程師在開發上能有全面性的考量，同時也能幫助團隊更有效率地達成目標。
+反指標： 有時這個能力會以個人開發的效率來評估，使得有人常常誤認為只要能很快完成功能就有資格當資深工程師，但他們卻忽略掉其他更值得注意的能力，結果為團隊帶來災難。
+能寫出可理解可維護的程式碼 這個特點的特徵就是平時就會撰寫測試、並對自己的程式碼做重構；對於自己的程式碼風格、變數或方法名稱等都非常要求，也絕對不會特意去走難懂的捷徑。這樣的資深工程師是非常自律的，所以被他 code review 時可能會有點痛苦，但絕對會學到很多。通常到這個階段的工程師，都是心靈上已經受過不少傷害，也對自己發過誓不再讓自己的程式碼傷害他人。</description>
+    </item>
+    
+    <item>
       <title>MarkDowm 練習測試</title>
       <link>https://jackson99011.github.io/blog/markdown-test/</link>
       <pubDate>Mon, 01 Mar 2021 10:07:47 +0600</pubDate>
