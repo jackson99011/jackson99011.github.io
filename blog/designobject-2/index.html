@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Technology Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="設計原則定義">
+  <meta name="author" content="佳穎">
+  <meta name="generator" content="Hugo 0.96.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://jackson99011.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://jackson99011.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://jackson99011.github.io"><img class="img-fluid"
+          src="https://jackson99011.github.io/images/logo.png" alt="Technology Blog"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto" style="color:black;" href="https://jackson99011.github.io">Technology Blog</a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://jackson99011.github.io/blog/">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://jackson99011.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://jackson99011.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/design-pattern"
+          class="text-primary">Design pattern</a>
+        
+        <h2>設計原則-1</h2>
+        <div class="mb-3 post-meta">
+          <span>By 佳穎</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2021-07-14</span>
+          
+        </div>
+        <div class="content mb-5">
+          <h3 id="原則principle">原則(Principle)</h3>
+<ul>
+<li>所謂<strong>原則</strong> 就是一種<em>概念</em>或<em>價值</em>用來引導你來產生適切的行為與價值評量的方法。</li>
+<li>依循原則比例越高代表程式碼品質越好。</li>
+</ul>
+<h3 id="oop物件導向設計的solid設計原則">OOP物件導向設計的Solid設計原則</h3>
+<ul>
+<li>單一責任原則 (SRP，Single Responsibility Principle)</li>
+<li>開放/封閉原則 (OCP，Open Close Principle)</li>
+<li>Liskov替換 (LSP，Liskov Substitution Principle)</li>
+<li>介面隔離原則 (ISP，Interface Segregation Principle)</li>
+<li>依賴反轉原則 (DSP，Dependency Inversion Principle)</li>
+</ul>
+<h3 id="內聚力cohesion">內聚力(Cohesion)</h3>
+<p>在一個類別完成一件工作的度量指標</p>
+<h4 id="高內聚力">高內聚力</h4>
+<ul>
+<li>在類別內可以獨立運作且更容易重複利用。</li>
+</ul>
+<h4 id="低內聚力">低內聚力</h4>
+<ul>
+<li>在類別內可完成多項工作，造成難以回復、測試、重用、理解。
+Ex:在一個方法中存在2000行程式，造成程式難以維護。</li>
+</ul>
+<h4 id="最佳目標">最佳目標</h4>
+<p>設計高內聚的程式碼，即在類別中完成多項功能的方法拆分成不同的類別。</p>
+<h3 id="耦合力coupling">耦合力(Coupling)</h3>
+<p>類別與類別間互相依賴的關係度，即改變了A模組B模組異動的幅度，通常越小越好，所以目標越接近<strong>低耦合</strong>的程式越好。</p>
+<h3 id="結論">結論</h3>
+<p><strong>高內聚低耦合</strong>為程式設計目標。</p>
+<!-- raw HTML omitted -->
+<h3 id="srp的基本精神">SRP的基本精神</h3>
+<ul>
+<li>一個類別應該只對唯一的一個腳色負責，不是一個函式只做一件事，而是當類別負擔太多責任時，需進行適當的切割，方便日後管理與維護。</li>
+<li>主要目標就是提<strong>高內聚力</strong>。</li>
+</ul>
+<h3 id="srp注意事項">SRP注意事項</h3>
+<ul>
+<li>不用急於在第一時間就專注於分離責任</li>
+<li>尚未出現的需求 (未來的需求) 不需要預先分離責任</li>
+<li>當需求變更的時候，再進行類別分割即可。</li>
+</ul>
+<h3 id="ocp的基本精神">OCP的基本精神</h3>
+<ul>
+<li>軟體應該是對於<strong>擴充開放</strong>的，但是對於<strong>修改封閉</strong>的</li>
+<li>類別開放
+<ul>
+<li>透過繼承去實現</li>
+<li>擴充方法去實現</li>
+</ul>
+</li>
+<li>類別封閉
+<ul>
+<li>有其他人在使用此類別</li>
+<li>可有效避免未知問題產生。</li>
+</ul>
+</li>
+</ul>
+<h3 id="ocp實作方式">OCP實作方式</h3>
+<p>採用分離與相依技巧，相依於抽象類別</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-weight:bold">public</span> <span style="color:#080;font-weight:bold">interface</span> <span style="color:#b06;font-weight:bold">ProductService</span> <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>  Integer <span style="color:#06b;font-weight:bold">countProduct</span><span style="color:#333">(</span>ProductQueryParams productQueryParams<span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#555;font-weight:bold">@Component</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-weight:bold">public</span> <span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">ProductServiceImpl</span> <span style="color:#080;font-weight:bold">implements</span> ProductService <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#555;font-weight:bold">@Autowired</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#080;font-weight:bold">private</span> ProductDao productDao<span style="color:#333">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#555;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#080;font-weight:bold">public</span> Integer <span style="color:#06b;font-weight:bold">countProduct</span><span style="color:#333">(</span>ProductQueryParams productQueryParams<span style="color:#333">)</span> <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#080;font-weight:bold">return</span> productDao<span style="color:#333">.</span><span style="color:#00c">countProduct</span><span style="color:#333">(</span>productQueryParams<span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span></code></pre></div><h3 id="ocp使用時機">OCP使用時機</h3>
+<ol>
+<li>類別已被清楚定義，處於一個強調穩定狀態。</li>
+<li>需要擴充現有的類別，加入新需求的屬性或方法</li>
+<li>修改現在程式，會破壞現有系統運作。</li>
+</ol>
+<h3 id="lsp定義">LSP定義</h3>
+<ul>
+<li>當實作繼承時，必須確保型別轉換後還能得到正確的結果。</li>
+<li>每個衍生類別都能<strong>正確替換為基底類別，且程式執行不會有異常產生</strong>。</li>
+<li>正確實做<strong>繼承</strong>與<strong>多型</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-weight:bold">public</span> <span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">LSP</span> <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#080;font-weight:bold">static</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">main</span><span style="color:#333">(</span>String<span style="color:#333">[]</span> args<span style="color:#333">)</span> <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        List<span style="color:#333">&lt;</span>Product<span style="color:#333">&gt;</span> products <span style="color:#333">=</span> <span style="color:#080;font-weight:bold">new</span> LinkedList<span style="color:#333">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        products<span style="color:#333">.</span><span style="color:#00c">add</span><span style="color:#333">(</span><span style="color:#080;font-weight:bold">new</span> Product<span style="color:#333">());</span>
+</span></span><span style="display:flex;"><span>        products<span style="color:#333">.</span><span style="color:#00c">add</span><span style="color:#333">(</span><span style="color:#080;font-weight:bold">new</span> Fish<span style="color:#333">());</span>
+</span></span><span style="display:flex;"><span>        products<span style="color:#333">.</span><span style="color:#00c">add</span><span style="color:#333">(</span><span style="color:#080;font-weight:bold">new</span> Goldfish<span style="color:#333">());</span>
+</span></span><span style="display:flex;"><span>        products<span style="color:#333">.</span><span style="color:#00c">add</span><span style="color:#333">(</span><span style="color:#080;font-weight:bold">new</span> NotForSale<span style="color:#333">());</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#080;font-weight:bold">for</span> <span style="color:#333">(</span>Product currentProduct <span style="color:#333">:</span> products<span style="color:#333">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>            currentProduct<span style="color:#333">.</span><span style="color:#00c">count</span><span style="color:#333">();</span>
+</span></span><span style="display:flex;"><span>            currentProduct<span style="color:#333">.</span><span style="color:#00c">price</span><span style="color:#333">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">Product</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">price</span><span style="color:#333">()</span> <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;price = 0&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">count</span><span style="color:#333">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;count = 0&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">Fish</span> <span style="color:#080;font-weight:bold">extends</span> Product
+</span></span><span style="display:flex;"><span><span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#555;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">price</span><span style="color:#333">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;Fish price = 10&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#555;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">count</span><span style="color:#333">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;Fish count = 10&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">Goldfish</span> <span style="color:#080;font-weight:bold">extends</span> Fish
+</span></span><span style="display:flex;"><span><span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#555;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">price</span><span style="color:#333">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;Goldfish price = 50&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#555;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">count</span><span style="color:#333">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;Goldfish count = 50&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">NotForSale</span> <span style="color:#080;font-weight:bold">extends</span> Product
+</span></span><span style="display:flex;"><span><span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#888">//無價(無須此項次)
+</span></span></span><span style="display:flex;"><span><span style="color:#888"></span>    <span style="color:#555;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">price</span><span style="color:#333">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#555;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">count</span><span style="color:#333">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;NotForSale count = 1&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span></code></pre></div><h3 id="inteface-replace">inteface replace</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-weight:bold">interface</span> <span style="color:#b06;font-weight:bold">Price</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">price</span><span style="color:#333">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-weight:bold">interface</span> <span style="color:#b06;font-weight:bold">Count</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">count</span><span style="color:#333">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">Product</span> <span style="color:#080;font-weight:bold">implements</span> Count<span style="color:#333">,</span>Price
+</span></span><span style="display:flex;"><span><span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#555;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">price</span><span style="color:#333">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;Product price = 0&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#555;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">count</span><span style="color:#333">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;Product count = 10&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">NotForSale</span> <span style="color:#080;font-weight:bold">implements</span> Count
+</span></span><span style="display:flex;"><span><span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#555;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">count</span><span style="color:#333">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;NotForSale count = 1&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span></code></pre></div><h3 id="lsp實作方法">LSP實作方法</h3>
+<ol>
+<li>採用<strong>繼承</strong>方式開發，確保繼承實作方法</li>
+<li><strong>基底類別</strong>使用<strong>介面</strong>方式執行</li>
+</ol>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jackson99011" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script>
+  var indexURL = "https://jackson99011.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://jackson99011.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/search/mark.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://jackson99011.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>

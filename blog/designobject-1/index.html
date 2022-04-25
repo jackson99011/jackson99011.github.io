@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Technology Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="OOP的四個特性">
+  <meta name="author" content="佳穎">
+  <meta name="generator" content="Hugo 0.96.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://jackson99011.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://jackson99011.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://jackson99011.github.io"><img class="img-fluid"
+          src="https://jackson99011.github.io/images/logo.png" alt="Technology Blog"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto" style="color:black;" href="https://jackson99011.github.io">Technology Blog</a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://jackson99011.github.io/blog/">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://jackson99011.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://jackson99011.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/design-pattern"
+          class="text-primary">Design pattern</a>
+        
+        <h2>物件導向核心</h2>
+        <div class="mb-3 post-meta">
+          <span>By 佳穎</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2021-03-10</span>
+          
+        </div>
+        <div class="content mb-5">
+          <h2 id="oop的四個特性">OOP的四個特性</h2>
+<!-- raw HTML omitted -->
+<h3 id="抽象abstration">抽象(Abstration)</h3>
+<ul>
+<li>抽象可以想像成一種概念，並不存在於世界上。</li>
+<li>將真實世界的需求轉換為物件導向的類別，類別包含屬性和方法。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-weight:bold">abstract</span> <span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">Printer</span><span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#339;font-weight:bold">int</span> type<span style="color:#333">;</span>
+</span></span><span style="display:flex;"><span>    String name<span style="color:#333">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">printf</span><span style="color:#333">(){</span>
+</span></span><span style="display:flex;"><span>        System<span style="color:#333">.</span><span style="color:#00c">out</span><span style="color:#333">.</span><span style="color:#00c">println</span><span style="color:#333">(</span><span style="background-color:#fff0f0">&#34;write...&#34;</span><span style="color:#333">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span></code></pre></div><h3 id="封裝encapsulation">封裝(Encapsulation)</h3>
+<ul>
+<li>隱藏或保護內部實作細節，不讓人直接存取使用，僅提供公開方法供存取。</li>
+</ul>
+<h3 id="private-私有">private 私有</h3>
+<p>private是資訊隱藏會普遍使用的修飾子，開放全限最低，只有自己類別的成員能夠存取。</p>
+<h3 id="public-公開">public 公開</h3>
+<p>與private相反，public是任何人都可以調用，通常用來表示這個方法可以供一般人呼叫。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-weight:bold">public</span> <span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">User</span> <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">private</span> String userId<span style="color:#333">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">private</span> String userName<span style="color:#333">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">private</span> String password<span style="color:#333">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">setUserId</span><span style="color:#333">(</span>String userId<span style="color:#333">)</span> <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#080;font-weight:bold">this</span><span style="color:#333">.</span><span style="color:#00c">userId</span> <span style="color:#333">=</span> userId<span style="color:#333">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">setUserName</span><span style="color:#333">(</span>String userName<span style="color:#333">)</span> <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#080;font-weight:bold">this</span><span style="color:#333">.</span><span style="color:#00c">userName</span> <span style="color:#333">=</span> userName<span style="color:#333">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> String <span style="color:#06b;font-weight:bold">getPassword</span><span style="color:#333">()</span> <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#080;font-weight:bold">return</span> password<span style="color:#333">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#080;font-weight:bold">public</span> <span style="color:#339;font-weight:bold">void</span> <span style="color:#06b;font-weight:bold">setPassword</span><span style="color:#333">(</span>String password<span style="color:#333">)</span> <span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#080;font-weight:bold">this</span><span style="color:#333">.</span><span style="color:#00c">password</span> <span style="color:#333">=</span> password<span style="color:#333">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#333">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">}</span>
+</span></span></code></pre></div><h3 id="繼承inheritance">繼承(Inheritance)</h3>
+<p>建立新類別有階層關係並可重複利用，子類別會擁有父類別的所有屬性、方法，再加上自己定義的屬性及方法，所以可以說子類別是父類別的延伸(extend)。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-weight:bold">public</span> <span style="color:#080;font-weight:bold">class</span> <span style="color:#b06;font-weight:bold">子類別</span> <span style="color:#080;font-weight:bold">extends</span> 父類別<span style="color:#333">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#888">// code
+</span></span></span><span style="display:flex;"><span><span style="color:#888"></span><span style="color:#333">}</span>
+</span></span></code></pre></div><h3 id="多型polymorphism">多型(Polymorphism)</h3>
+<ul>
+<li>相同介面下可以用不同型別來實現</li>
+<li>多型分好幾種不同的類型
+<ul>
+<li><strong>基底類別</strong>可以定義和實作虛擬屬性和方法。</li>
+<li><strong>衍生類別</strong>可以覆寫這些虛擬的屬性或方法。</li>
+</ul>
+</li>
+<li>多載(Overloading)
+<ul>
+<li>相同函式卻有不同的輸入引數</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jackson99011" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script>
+  var indexURL = "https://jackson99011.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://jackson99011.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/search/mark.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://jackson99011.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>

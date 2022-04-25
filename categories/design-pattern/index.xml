@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>design pattern on Technology Blog</title>
+    <link>https://jackson99011.github.io/categories/design-pattern/</link>
+    <description>Recent content in design pattern on Technology Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 14 Jul 2021 09:07:47 +0800</lastBuildDate><atom:link href="https://jackson99011.github.io/categories/design-pattern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>設計原則-1</title>
+      <link>https://jackson99011.github.io/blog/designobject-2/</link>
+      <pubDate>Wed, 14 Jul 2021 09:07:47 +0800</pubDate>
+      
+      <guid>https://jackson99011.github.io/blog/designobject-2/</guid>
+      <description>原則(Principle)  所謂原則 就是一種概念或價值用來引導你來產生適切的行為與價值評量的方法。 依循原則比例越高代表程式碼品質越好。  OOP物件導向設計的Solid設計原則  單一責任原則 (SRP，Single Responsibility Principle) 開放/封閉原則 (OCP，Open Close Principle) Liskov替換 (LSP，Liskov Substitution Principle) 介面隔離原則 (ISP，Interface Segregation Principle) 依賴反轉原則 (DSP，Dependency Inversion Principle)  內聚力(Cohesion) 在一個類別完成一件工作的度量指標</description>
+    </item>
+    
+    <item>
+      <title>物件導向核心</title>
+      <link>https://jackson99011.github.io/blog/designobject-1/</link>
+      <pubDate>Wed, 10 Mar 2021 08:07:47 +0800</pubDate>
+      
+      <guid>https://jackson99011.github.io/blog/designobject-1/</guid>
+      <description>OOP的四個特性 抽象(Abstration)  抽象可以想像成一種概念，並不存在於世界上。 將真實世界的需求轉換為物件導向的類別，類別包含屬性和方法。  abstract class Printer{  int type;  String name;  void printf(){  System.</description>
+    </item>
+    
+  </channel>
+</rss>
