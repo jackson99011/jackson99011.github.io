@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Technology Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Http 超文本傳輸協定（英語：HyperText Transfer Protocol）">
+  <meta name="author" content="佳穎">
+  <meta name="generator" content="Hugo 0.96.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://jackson99011.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://jackson99011.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://jackson99011.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://jackson99011.github.io"><img class="img-fluid"
+          src="https://jackson99011.github.io/images/logo.png" alt="Technology Blog"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto" style="color:black;" href="https://jackson99011.github.io">Technology Blog</a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://jackson99011.github.io/blog/">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://jackson99011.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://jackson99011.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/web"
+          class="text-primary">Web</a>
+        
+        <h2>HTTP</h2>
+        <div class="mb-3 post-meta">
+          <span>By 佳穎</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2022-02-11</span>
+          
+        </div>
+        <div class="content mb-5">
+          <h2 id="超文本傳輸協定http">超文本傳輸協定(HTTP)</h2>
+<p>超文本傳輸協定（英語：HyperText Transfer Protocol，縮寫：HTTP）是一種用於分佈式、協作式和超媒體訊息系統的應用層協定。HTTP是全球資訊網的數據通信的基礎。</p>
+<p>設計HTTP最初的目的是為了提供一種發布和接收HTML頁面的方法。透過HTTP或者HTTPS協定請求的資源由統一資源識別碼（Uniform Resource Identifiers，URI）來標識。</p>
+<p>主要是架構於 TCP/IP 之上的 應用層，為 無狀態 的 請求-回應 通訊協定。</p>
+<h3 id="http10">HTTP/1.0</h3>
+<ol>
+<li>用戶端以ASCII字元為主，可發送多行命令(含標頭)</li>
+<li>伺服器回應也以ASCII字元為主，回應內容區分
+<ul>
+<li>狀態列</li>
+<li>回應標題</li>
+<li>回應內文主體</li>
+</ul>
+</li>
+<li>每完成一次 <strong>Request/Response</strong> 交握就會關閉TCP/IP連線。</li>
+</ol>
+<p>HTTP/1.0 400 Bad Request
+Content-Type: text/html;charset=UTF-8
+Referrer-Policy: no-referrer
+Content-Length: 1555
+Date: Mon, 02 May 2019 03:03:08 GMT</p>
+<h3 id="http11">HTTP/1.1</h3>
+<p>傳輸協議效能改進</p>
+<ol>
+<li>持續連線狀態 (persistent connection)</li>
+</ol>
+<ul>
+<li>1.0版時完成一次request就會斷線，1.1版後透過持續連線如讀取一個網頁圖片與頁面文字內容而不需重新連線。</li>
+</ul>
+<ol start="2">
+<li>切塊編碼傳輸 (chunked encoding transfer)</li>
+</ol>
+<ul>
+<li>
+<p>分塊傳輸編碼（Chunked transfer encoding）是超文本傳輸協議（HTTP）中的一種數據傳輸機制，允許HTTP由網頁伺服器發送給客戶端應用（通常是網頁瀏覽器）的數據可以分成多個部分。分塊傳輸編碼只在HTTP協議1.1版本（HTTP/1.1）中提供。</p>
+</li>
+<li>
+<p>HTTP 1.1引入分塊傳輸編碼提供了以下幾點好處：</p>
+<ul>
+<li>HTTP分塊傳輸編碼允許服務器為動態生成的內容維持HTTP持久鏈接。通常，持久鏈接需要服務器在開始發送消息體前發送Content-Length消息頭字段，但是對於動態生成的內容來說，在內容創建完之前是不可知的。</li>
+<li>分塊傳輸編碼允許服務器在最後發送消息頭字段。對於那些頭字段值在內容被生成之前無法知道的情形非常重要，例如消息的內容要使用散列進行簽名，散列的結果通過HTTP消息頭字段進行傳輸。沒有分塊傳輸編碼時，服務器必須緩衝內容直到完成後計算頭字段的值並在發送內容前發送這些頭字段的值。</li>
+<li>HTTP服務器有時使用壓縮 （gzip或deflate）以縮短傳輸花費的時間。分塊傳輸編碼可以用來分隔壓縮對象的多個部分。在這種情況下，塊不是分別壓縮的，而是整個負載進行壓縮，壓縮的輸出使用本文描述的方案進行分塊傳輸。在壓縮的情形中，分塊編碼有利於一邊進行壓縮一邊發送數據，而不是先完成壓縮過程以得知壓縮後數據的大小。</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>位元範圍請求 (HTTP range requests)
+提供向server要抓取資料多少位元，ex:檔案下載用途。</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>curl <span style="color:#333">-</span>I http<span style="color:#333">:</span><span style="color:#888">//i.imgur.com/z4d4kWk.jpg
+</span></span></span><span style="display:flex;"><span><span style="color:#888"></span>
+</span></span><span style="display:flex;"><span>HTTP<span style="color:#333">/</span>1<span style="color:#333">.</span><span style="color:#00c">1</span> 200 OK
+</span></span><span style="display:flex;"><span><span style="color:#333">...</span>
+</span></span><span style="display:flex;"><span>Accept<span style="color:#333">-</span>Ranges<span style="color:#333">:</span> bytes
+</span></span><span style="display:flex;"><span>Content<span style="color:#333">-</span>Length<span style="color:#333">:</span> 146515
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>curl http<span style="color:#333">:</span><span style="color:#888">//i.imgur.com/z4d4kWk.jpg -i -H &#34;Range: bytes=0-1023&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#888"></span>
+</span></span><span style="display:flex;"><span>Request
+</span></span><span style="display:flex;"><span>GET <span style="color:#333">/</span>z4d4kWk<span style="color:#333">.</span><span style="color:#00c">jpg</span> HTTP<span style="color:#333">/</span>1<span style="color:#333">.</span><span style="color:#00c">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#970;font-weight:bold">Host:</span> i<span style="color:#333">.</span><span style="color:#00c">imgur</span><span style="color:#333">.</span><span style="color:#00c">com</span>
+</span></span><span style="display:flex;"><span><span style="color:#970;font-weight:bold">Range:</span> bytes<span style="color:#333">=</span>0<span style="color:#333">-</span>1023
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Response
+</span></span><span style="display:flex;"><span>HTTP<span style="color:#333">/</span>1<span style="color:#333">.</span><span style="color:#00c">1</span> 206 Partial Content
+</span></span><span style="display:flex;"><span>Content<span style="color:#333">-</span>Range<span style="color:#333">:</span> bytes 0<span style="color:#333">-</span>1023<span style="color:#333">/</span>146515
+</span></span><span style="display:flex;"><span>Content<span style="color:#333">-</span>Length<span style="color:#333">:</span> 1024
+</span></span><span style="display:flex;"><span><span style="color:#333">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#333">(</span>binary content<span style="color:#333">)</span>
+</span></span></code></pre></div><ol start="4">
+<li>額外快取機制 (cache control)</li>
+</ol>
+<ul>
+<li>瀏覽器提供cache機制當網頁重新讀取時不用重新進行資料載入。</li>
+</ul>
+<h3 id="public">public</h3>
+<p>此回應可以被任何快取軟體儲存起來，即使它本身通常是不可快取的。</p>
+<h3 id="private">private</h3>
+<p>此回應只可以被瀏覽器儲存起來，即使它本身通常是不可快取的。如果你真的不要任何快取軟體儲存你的回應，可以使用 no-store 。這個指令不是用來防止快取軟體儲存回應的。</p>
+<h3 id="no-cache">no-cache</h3>
+<p>此回應可以被任何快取軟體儲存起來，即使它本身通常是不可快取的。不過，在使用儲存起來的 HTTP 回應之前，必須必須向後端伺服器做驗證，因此你不能拿 no-cache 跟 immutable 一起使用。如果你真的不要任何快取軟體儲存你的回應，可以使用 no-store 。這個指令不是用來防止快取軟體儲存回應的。</p>
+<h3 id="no-store">no-store</h3>
+<p>此回應不能被任何快取軟體儲存起來。當然它無法防止 先前儲存起來 的回應被回傳。客戶端可以用 max-age=0 來清除快取，並強制向後端伺服器做驗證。（其他指令跟 no-store 一起使用都無效）</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  請求用指令
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> max<span style="color:#333">-</span>age<span style="color:#333">=&lt;</span>秒數<span style="color:#333">&gt;</span>
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> max<span style="color:#333">-</span>stale<span style="color:#333">[=&lt;</span>秒數<span style="color:#333">&gt;]</span>
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> min<span style="color:#333">-</span>fresh<span style="color:#333">=&lt;</span>秒數<span style="color:#333">&gt;</span>
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> no<span style="color:#333">-</span>cache
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> no<span style="color:#333">-</span>store
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> no<span style="color:#333">-</span>transform
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> only<span style="color:#333">-</span><span style="color:#080;font-weight:bold">if</span><span style="color:#333">-</span>cached
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  回應用指令
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> must<span style="color:#333">-</span>revalidate
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> no<span style="color:#333">-</span>cache
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> no<span style="color:#333">-</span>store
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> no<span style="color:#333">-</span>transform
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> <span style="color:#080;font-weight:bold">public</span>
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> <span style="color:#080;font-weight:bold">private</span>
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> proxy<span style="color:#333">-</span>revalidate
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> max<span style="color:#333">-</span>age<span style="color:#333">=&lt;</span>秒數<span style="color:#333">&gt;</span>
+</span></span><span style="display:flex;"><span>  Cache<span style="color:#333">-</span>Control<span style="color:#333">:</span> s<span style="color:#333">-</span>maxage<span style="color:#333">=&lt;</span>秒數<span style="color:#333">&gt;</span>
+</span></span></code></pre></div><p><img src="/public/images/http_cache_type.png" alt="內部引用"></p>
+<ol start="5">
+<li>請求管線作業 (request pipelining)</li>
+</ol>
+<ul>
+<li>是將多個HTTP請求（request）整批送出的技術，而在傳送過程中不需先等待服務器的回應。</li>
+<li><img src="/public/images/HTTP_pipelining.svg.png" alt="內部引用"></li>
+</ul>
+<h3 id="參考資訊">參考資訊</h3>
+<p><a href="https://zh.wikipedia.org/zh-tw/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE">超文本傳輸協定(wiki)</a></p>
+<p><a href="https://datatracker.ietf.org/doc/html/rfc2616">rfc2616</a></p>
+<p><a href="https://developer.mozilla.org/zh-TW/docs/Web/HTTP">mdn web docs</a></p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jackson99011" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script>
+  var indexURL = "https://jackson99011.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://jackson99011.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/search/mark.js"></script>
+
+<script src="https://jackson99011.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://jackson99011.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>
